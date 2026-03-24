@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Bewerbung Assistent Administrator</title>
+<link rel="stylesheet" href="Ass.Admin.css">
+</head>
+<body>
+
+<div class="bg"></div>
+
+<header>
+    <h1>Assistent Administrator</h1>
+    <p>Bewerbung Übersicht</p>
+</header>
+
+<div class="container">
+
+    <!-- MENU -->
+    <div class="menu">
+        <div class="item active" onclick="openTab('info')">Info</div>
+        <div class="item" onclick="openTab('zusatz')">Zusätzliche Infos</div>
+        <div class="item" onclick="openTab('skills')">Stärken & Schwächen</div>
+        <div class="item" onclick="openTab('ende')">Abschluss</div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- INFO -->
+        <div id="info" class="tab active">
+            <h2>Info</h2>
+
+            <div class="info-box">
+                <p>Mein Reallife Name: <b>Ali</b></p>
+                <p>Mein Alter: <b>16</b></p>
+                <p>Zeitzone: <b>Berlin</b></p>
+                <p>Onlinezeit: <b>5–10 Stunden</b></p>
+                <p>Discord: <b>x7tmm</b></p>
+                <p>Nickname: <b>Joe Versace</b></p>
+                <p>ID: <b>138727</b></p>
+            </div>
+        </div>
+
+        <!-- ZUSATZ -->
+    <div id="zusatz" class="tab">
+    <h2>Zusätzliche Informationen</h2>
+
+    <p class="big-text">
+        Schon immer war es mein Ziel aktiv etwas zu verändern mitzudenken und meine gesammelten Erfahrungen sinnvoll einzusetzen  
+        ich möchte nicht nur Teil der Community sein sondern auch aktiv dazu beitragen sie zu verbessern und zu unterstützen  
+
+        Die Tätigkeit als Administrator spricht mich besonders an da ich hier die Möglichkeit habe mehr Verantwortung zu übernehmen  
+        mir geht es nicht nur darum zu spielen sondern unseren Bürgern zu helfen und für sie da zu sein wenn sie Unterstützung brauchen  
+
+        Es motiviert mich als Ansprechpartner für Spieler zu fungieren und ihnen bei Fragen oder Problemen weiterzuhelfen  
+        durch meine lange Spielzeit kenne ich die Abläufe sowie die Regeln sehr gut und weiss worauf es im Umgang mit Spielern ankommt  
+
+        Ich arbeite ruhig und überlegt und versuche in jeder Situation faire und nachvollziehbare Entscheidungen zu treffen auch wenn es stressig wird  
+        ausserdem ist es mir wichtig immer respektvoll zu bleiben und Probleme nicht unnötig eskalieren zu lassen  
+
+        Als Assistent Administrator möchte ich Verantwortung übernehmen für Ordnung sorgen und bei Problemen schnell sowie lösungsorientiert handeln  
+        für mich ist diese Position nicht einfach nur ein Rang sondern eine Aufgabe bei der ich aktiv dazu beitragen kann ein faires und angenehmes Spielumfeld zu schaffen  
+
+        <br><br>
+
+        4. Wären Sie bereit, das RP-Leben zu verlassen, um Admin zu werden? 
+
+        Nein, da ich mich erstmal als Assistent Administrator bewerben möchte.
+
+        5. Wärst du bereit, dein Unternehmen zu verkaufen? (Es ist eingeschränkt, ein Geschäft zu haben, während man Admin ist) 
+        Ja, dazu wäre ich auf jeden Fall bereit.
+        <br><br>
+
+          
+    </p>
+</div>
+
+        <!-- SKILLS -->
+        <div id="skills" class="tab">
+            <h2>Stärken & Schwächen</h2>
+
+            <div class="skills-wrapper">
+
+                <!-- STÄRKEN -->
+                <div class="box staerken">
+                    <h3>Stärken</h3>
+
+                    <p>Ich bin ruhig und kann gut mit stressigen Situationen umgehen</p>
+                    <p>Ich bin teamfähig und arbeite gerne im Team</p>
+                    <p>Ich bin offen für Neues und lerne schnell</p>
+                    <p>Ich bin kritikfähig und entwickle mich weiter</p>
+                    <p>Ich bleibe höflich auch bei schwierigen Spielern</p>
+                    <p>Ich übernehme Verantwortung</p>
+                    <p>Ich bin hilfsbereit und erkläre Dinge gerne</p>
+                    <p>Ich achte auf gute Rechtschreibung</p>
+                </div>
+
+                <!-- SCHWÄCHEN -->
+                <div class="box schwaechen">
+                    <h3>Schwächen</h3>
+
+                    <p>Ich bin anfangs etwas zurückhaltend</p>
+                    <p>Manchmal bin ich etwas zu direkt</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ENDE -->
+        <div id="ende" class="tab">
+            
+    <p class="big-text">
+            <h2>Abschluss</h2>
+            <p>Ich bedanke mich herzlich dafür, dass Sie sich die Zeit genommen haben, meine Bewerbung durchzulesen, und hoffe, dass ich Ihnen einen guten Einblick in meine Motivation, meine Stärken sowie meine Einstellung geben konnte. Es würde mich sehr freuen, die Chance zu bekommen, mich als Assistent Administrator unter Beweis zu stellen und aktiv zum Servergeschehen beizutragen. Ich bin bereit, Verantwortung zu übernehmen, dazuzulernen und mich stetig weiterzuentwickeln, um das Team bestmöglich zu unterstützen und für die Spieler ein faires und angenehmes Umfeld zu schaffen. Über eine positive Rückmeldung würde ich mich daher sehr freuen.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function openTab(tabId) {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    document.querySelectorAll(".item").forEach(i => i.classList.remove("active"));
+
+    document.getElementById(tabId).classList.add("active");
+    event.target.classList.add("active");
+}
+</script>
+
+</body>
+</html>
